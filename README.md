@@ -15,7 +15,7 @@ $python -m venv venv
 $venv\Scripts\activate.bat  
 $pip install -r requirements.txt  
 
-$python manage.py makemigraton accounts  
+$python manage.py makemigration accounts  
 $python manage.py migrate  
 $python manage.py runserver  
 
