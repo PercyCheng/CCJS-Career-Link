@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Register</title>
+    <title>Login</title>
     {% load static %}
     <link rel="stylesheet" type="text/css"
     href="{% static "accounts/style.css" %}" >
@@ -16,7 +16,7 @@
             <form method="POST">
                 {% csrf_token %}
                 {{form.as_p}}
-                <button>Login</button>
+                <button type="submit">Login</button>
             </form>
         {% endblock %}
     </div>
