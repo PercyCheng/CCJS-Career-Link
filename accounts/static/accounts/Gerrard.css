@@ -1,0 +1,44 @@
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 35%;
+    min-width: 35%;
+    transform: translate(-50%, -50%);
+    border: 3px solid black;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+.centerLeft {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 35%;
+    min-width: 35%;
+    transform: translate(-50%, -50%);
+    border: 3px solid black;
+    padding: 10px;
+    background-color: white;
+    text-align: left;
+}
+
+body {
+    background-image: url("background.png");
+}
+.search-sec{
+    padding: 2rem;
+}
+.search-slt{
+    display: block;
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #55595c;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+}
