@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="container" style="margin-bottom: 100px">
+    <div class="container-fluid">
+
+        <div class="card" style="width:300px">
+            <img src="{% static 'images/IDprototype.png' %}" alt="Image" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">Percy</h4>
+                <p class="card-text">Some example text some example text. Percy is working on the profile part</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container-fluid">
+        <div class="card" style="width:400px">
+            <div class="container text-white bg-primary">
+                <h1>CCJS</h1>
+            </div>
+            <div class="card-body">
+                <p class="card-text">The goal of the JCU Career Link project is to provide a communications platform in a regional area to promote job opportunities. The challenge of this is accommodating and integrating the different set of services required for the 3 distinct types of users, students, professors and employers.
+                </p><p>jcu.edu.au</p></p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

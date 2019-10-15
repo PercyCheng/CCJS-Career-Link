@@ -7,6 +7,11 @@ from .forms import CustomUserCreationForm
 
 def indexView(request):
     return render(request, 'index.html')
+def searchView(request):
+    return render(request, "search.html")
+def profileView(request):
+    return render(request, "profile.html")
+
 
 @login_required
 def dashboardView(request):

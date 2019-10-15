@@ -1,25 +1,15 @@
-
- <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-    {% load static %}
-    <link rel="stylesheet" type="text/css"
-    href="{% static "accounts/style.css" %}" >
-  </head>
-  <body>
-
-    <div class="center">
-        {% block content %}
-            <h1>Login</h1>
-            <form method="POST">
-                {% csrf_token %}
-                {{form.as_p}}
-                <button type="submit">Login</button>
-            </form>
-        {% endblock %}
-    </div>
-
-  </body>
-</html>
+{% extends "base.html" %}
+{% block content %}
+<div class = "card" style="margin: 5% 30%;">
+  <div class = "card-title text-white bg-success" style="text-align: center;background-color: purple-gradient">
+    <h1>Login</h1>
+  </div>
+  <div style="margin: 10%">
+    <form method="POST" style="text-align: center" >
+      {% csrf_token %}
+      {{form.as_p}}
+      <button class="btn btn-primary" type="submit" value="Submit" style="margin: 5%">Login</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

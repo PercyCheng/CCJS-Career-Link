@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JCU Career Link</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css"
+          href="{% static 'accounts/style.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="{% static 'images/jcu logo.png' %}" width="130" height="60" class="d-inline-block align-top"
+             alt="JCU logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto" class="p-3 mb-2 bg-info text-white">
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'home_url' %}">Home<span class="sr-only">(current)</span></a>
+</li>
+
+<li class="nav-item active">
+    <a class="nav-link" href="{% url 'profile_url'%}">Profile<span class="sr-only">(current)</span></a>
+</li>
+<li class="nav-item active">
+    <a class="nav-link" href="{% url 'search_url'%}">Search<span class="sr-only">(current)</span></a>
+</li>
+</ul>
+<form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Find" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Find</button>
+</form>
+</div>
+</nav>
+
+<!--  /* main content: please write your content here*/-->
+
+<div >
+    <br>
+    {% block content %}
+
+    {% endblock %}
+    <br>
+</div>
+
+
+<!--  /*footer part: do not write your code after this line*/-->
+<footer class="jumbotron text-center fixed-bottom " style="margin:100px 0 0 0;padding:5px 0 0 0; bg-info">
+    <p>Posted by: Jarod, Sid, Gerrard, Cheng Peng</p>
+    <p>Contact information: <a href="https://www.jcu.edu.au/">student.example.name@my.jcu.edu.au</a>.</p>
+</footer>
+
+</body>
+
+
+</html>

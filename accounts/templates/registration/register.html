@@ -1,25 +1,17 @@
+{% extends "base.html" %}
 
- <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Register</title>
-    {% load static %}
-    <link rel="stylesheet" type="text/css"
-    href="{% static "accounts/style.css" %}" >
-  </head>
-  <body>
+{% block content %}
 
-    <div class="centerLeft">
-        {% block content %}
-            <h1 align="center">Create New Account</h1>
-            <form method="POST">
-                {% csrf_token %}
-                {{form.as_p}}
-                <button type="submit">Register</button>
-            </form>
-        {% endblock %}
-    </div>
+<div class = "card" style="margin: 5% 30% 10%;">
+  <div class = "card-title text-white bg-warning" style="text-align: center">
+    <h1>Create New Account</h1>
+  </div>
+  <div style="margin: 10%">
+    <form method="POST">
+      {% csrf_token %}
+      {{form.as_p}}
+      <button class="btn btn-primary" type="submit" value="Submit" style="margin: 5% 40%">Register</button>
+  </div>
+</div>
 
-  </body>
-</html>
+{% endblock %}
