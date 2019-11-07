@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JCU Career Link</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css"
+          href="{% static 'accounts/Gerrard.css' %}">
+</head>
+<body>
+
+<!--  /*nav bar*/-->
+
+<nav id='nav'>
+    <div class='logo'><a href="https://www.jcu.edu.au/">
+        <img src="{% static 'images/jcu logo.png' %}" height="90" width="200"/>
+    </a>
+    </div>
+    <ul>
+        <li><a>Home</a></li>
+        <li><a>Search</a></li>
+        <li><a>Profile</a></li>
+        <!--            <li><a></a></li>-->
+    </ul>
+</nav>
+
+<!--  /* main content: please write your content here*/-->
+</section>
+<section class="search-sec">
+    <div class="container">
+        <form action="#" method="post" novalidate="novalidate">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <input type="text" class="form-control search-slt" placeholder="Enter Key Words">
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <input type="text" class="form-control search-slt" placeholder="Enter Category">
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <select class="form-control search-slt" id="Locations">
+                                <option>Cairns</option>
+                                <option>Townsville</option>
+                                <option>Brisbane</option>
+                                <option>Singapore</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <button type="button" class="btn btn-danger wrn-btn">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!--  /*footer part: do not write your code after this line*/-->
+<footer class="footer">
+    <p>Posted by: Jarod, Sid, Gerrard, Peng</p>
+    <p>Contact information: <a href="https://www.jcu.edu.au/">student.example.name@my.jcu.edu.au</a>.</p>
+</footer>
+
+</body>
+
+
+</html>
